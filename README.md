@@ -9,6 +9,8 @@ On screens 768px and below, additional navigation features are introduced to enh
 - 🛒 Cart layout restructured for vertical stacking and proportional image scaling
 - ✅ Buttons resized and realigned to maintain visual harmony and tap-friendly spacing
 - 🌿 Product images and details adapt fluidly to smaller screens without overflow or distortion
+
+
 These enhancements ensure that users can browse, shop, and interact with the app comfortably on any device.
 
 
