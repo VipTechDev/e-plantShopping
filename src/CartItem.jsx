@@ -78,7 +78,7 @@ const handleDecrement = (item) => {
       <div className="continue_shopping_btn">
         <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
         <br />
-        <button className="get-started-button1">Checkout</button>
+        <button className="get-started-button">Checkout</button>
       </div>
     </div>
   );

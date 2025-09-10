@@ -1,5 +1,4 @@
 /* CartItem.css */
-/* CartItem.css */
 
 .cart-item {
   display: flex;
@@ -79,6 +78,30 @@
 .cart-item-button-inc{
   background-color: green;
 } */
+
+.get-started-button {
+  padding: 15px 75px;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+  width: 300px;
+}
+
+.get-started-button:hover {
+  background-color: #45a049;
+}
+
 @media (max-width: 768px) {
   .cart-item {
     flex-direction: column; /* Change flex direction to stack items vertically */
@@ -220,16 +243,44 @@
   margin-top: -50px;
 }
    @media (max-width: 768px) {
-    .cart-container {
-      padding: 10px; /* Reduce padding */
-    }
-  
-    .total_cart_amount {
-      font-size: 18px; /* Reduce font size */
-    }
+  .cart-container {
+    padding: 10px; /* Reduce padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
-  .get-started-button1 {
+  .cart-item {
+    flex-direction: column;
+    align-items: center; /* Center everything */
+    width: 100%;
+  }
+
+  .cart-item-image {
+    width: 90%; /* Fluid but not full width */
+    max-width: 300px; /* Prevents mega-stretch */
+    height: auto;
+    margin: 0 auto 10px; /* Centers and adds spacing */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .cart-item-details {
+    width: 90%;
+    text-align: center;
+  }
+
+  .cart-item-quantity {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .total_cart_amount {
+    font-size: 18px; /* Reduce font size */
+  }
+
+  .get-started-button {
     padding: 15px 75px;
     font-size: 23px;
     border: none;
@@ -239,5 +290,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 40px;
+    
   }
+}
   

@@ -3,6 +3,8 @@ import './ProductList.css'
 import CartItem from './CartItem';
 import { addItem } from './CartSlice'; 
 import { useSelector, useDispatch } from 'react-redux';
+import MobileNav from './MobileNav';
+
 function ProductList({ onHomeClick }) {
     const dispatch = useDispatch();
     const [showCart, setShowCart] = useState(false);
@@ -10,6 +12,7 @@ function ProductList({ onHomeClick }) {
     const [addedToCart, setAddedToCart] = useState({});
     const cartItems = useSelector(state => state.cart.items);
     const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+    const cartCount = totalItems;
 
     const handleAddToCart = (product) => {
         dispatch(addItem(product));
@@ -310,6 +313,7 @@ function ProductList({ onHomeClick }) {
         </div>
       </div>
     </div>
+    <MobileNav cartCount={cartCount} visible={true} onCartClick={handleCartClick} onPlantsClick={handlePlantsClick} />
 
     {!showCart ? (
       <div className="product-grid">

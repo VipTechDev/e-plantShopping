@@ -118,30 +118,112 @@
   .content {
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    justify-content: flex-start;
+    padding: 1rem;
     height: 100vh;
+    width: 100vw;
+    gap: 15px;
   }
 
   .landing_content {
-    margin-top: 100px; /* Adjust as needed */
-    margin-left: 0;
-    width: 80%; /* Adjust as needed */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: auto;
+    transform: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .content p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 36px;
     text-align: center;
   }
 
   .aboutus_container {
-    margin-top: 20px; /* Adjust as needed */
-    width: 80%; /* Adjust as needed */
+    margin-top: 20px;
+    width: 90%;
+    padding: 1rem;
+    box-sizing: border-box;
   }
 }
 
 @media screen and (max-width: 480px) {
   .landing_content {
-    margin-top: 50px; /* Adjust as needed */
-    width: 90%; /* Adjust as needed */
+    margin-top: 60px;
+    width: 90%;
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  .content p {
+    font-size: 15.5px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 32px;
+    text-align: center;
   }
 
   .aboutus_container {
-    width: 90%; /* Adjust as needed */
+    width: 95%;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content p {
+    font-size: 15px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .landing_content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    transform: none;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .content h1 {
+    order: -2;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .get-started-button {
+    order: -1;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .content p {
+    font-size: 22px;
+    text-align: center;
+    max-width: 90vw;
+    padding: 0 1rem;
+    line-height: 1.6;
   }
 }
